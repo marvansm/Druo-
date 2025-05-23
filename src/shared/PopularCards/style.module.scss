@@ -1,0 +1,37 @@
+.box {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.boxImg {
+  overflow: hidden;
+  position: relative;
+
+  &:hover {
+    .icons {
+      opacity: 1;
+    }
+    .hoverImg {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .hoverImg {
+    overflow: hidden;
+    position: absolute;
+    transform: scale(0.8);
+    transition: 0.4s linear;
+    inset: 0;
+    opacity: 0;
+  }
+  .icons {
+ 
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    opacity: 0;
+  }
+}
