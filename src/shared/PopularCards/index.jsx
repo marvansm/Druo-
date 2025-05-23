@@ -6,10 +6,11 @@ import {
   Heart,
   ShoppingBagIcon,
 } from "lucide-react";
+
 const PopularCards = ({image,hoverImg,title,discountprice,price}) => {
   return (
-    <div className="container mx-auto px-7">
-      <div className="grid grid-cols-5">
+    <div >
+      <div >
         <div className={clsx(styles.box)}>
           <div className={clsx(styles.boxImg)}>
             <img
