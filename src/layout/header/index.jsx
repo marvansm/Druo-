@@ -11,7 +11,7 @@ import React from "react";
 const Header = () => {
   return (
     <div>
-      <div className="bg-[#f3f3f3] py-[20px]">
+      <div className="bg-[#f3f3f3] py-[20px] ">
         <div className="container mx-auto max-w-[1300px] px-[15px]">
           <div className="flex items-center justify-between ">
             <div className="left">

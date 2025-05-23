@@ -6,7 +6,7 @@ import {
   Heart,
   ShoppingBagIcon,
 } from "lucide-react";
-const PopularCards = ({image,hoverImg,}) => {
+const PopularCards = ({image,hoverImg,title,discountprice,price}) => {
   return (
     <div className="container mx-auto px-7">
       <div className="grid grid-cols-5">
@@ -39,12 +39,12 @@ const PopularCards = ({image,hoverImg,}) => {
             </div>
           </div>
           <div className="boxBody flex items-center flex-col">
-            <h2 className="text-[#333]">Drou watch ultra</h2>
+            <h2 className="text-[#333]">{title}</h2>
             <div className="price flex items-center gap-2.5">
               <span className="text-[18px] text-[#e52e06] font-bold">
-                $70.00
+               {discountprice}
               </span>
-              <span className="line-through text-[15px]">$85.00</span>
+              <span className="line-through text-[15px]">{price}</span>
             </div>
           </div>
         </div>

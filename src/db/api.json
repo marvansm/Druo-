@@ -1,0 +1,68 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "title": "Drou watch ultra",
+            "image": "https://example.com/images/tshirt1.jpg",
+            "hoverImage": "https://example.com/images/tshirt1_hover.jpg",
+            "price": 70.00,
+            "discountPrice": 80.00
+        },
+        {
+            "id": 2,
+            "title": "Droubook space gray",
+            "image": "https://example.com/images/jacket1.jpg",
+            "hoverImage": "https://example.com/images/jacket1_hover.jpg",
+            "price": 60.00,
+            "discountPrice": 45.00
+        },
+        {
+            "id": 3,
+            "title": "Homepod mini 2022",
+            "image": "https://example.com/images/boots1.jpg",
+            "hoverImage": "https://example.com/images/boots1_hover.jpg",
+            "price": 120.00,
+            "discountPrice": 95.00
+        },
+        {
+            "id": 4,
+            "title": "DroSafe Charger",
+            "image": "https://example.com/images/sneakers1.jpg",
+            "hoverImage": "https://example.com/images/sneakers1_hover.jpg",
+            "price": 70.00,
+            "discountPrice": 55.00
+        },
+        {
+            "id": 5,
+            "title": "UPad Pro black color",
+            "image": "https://example.com/images/scarf1.jpg",
+            "hoverImage": "https://example.com/images/scarf1_hover.jpg",
+            "price": 30.00,
+            "discountPrice": 24.99
+        },
+        {
+            "id": 6,
+            "title": "Home entertainment",
+            "image": "https://example.com/images/jeans1.jpg",
+            "hoverImage": "https://example.com/images/jeans1_hover.jpg",
+            "price": 55.00,
+            "discountPrice": 42.50
+        },
+        {
+            "id": 7,
+            "title": "DrouPods Pro white",
+            "image": "https://example.com/images/wallet1.jpg",
+            "hoverImage": "https://example.com/images/wallet1_hover.jpg",
+            "price": 40.00,
+            "discountPrice": 32.00
+        },
+        {
+            "id": 8,
+            "title": "Uphone lightning cable",
+            "image": "https://example.com/images/watch1.jpg",
+            "hoverImage": "https://example.com/images/watch1_hover.jpg",
+            "price": 150.00,
+            "discountPrice": 129.99
+        }
+    ]
+}

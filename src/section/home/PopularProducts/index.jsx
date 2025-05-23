@@ -1,8 +1,12 @@
 import React from 'react'
+import PopularCards from '../../../shared/PopularCards'
 
 const PopularSection = () => {
   return (
-    <div>PopularSection</div>
+    <div>
+      <PopularCards
+      image={} />
+    </div>
   )
 }
 
