@@ -1,68 +1,68 @@
 {
-    "product": [
-        {
-            "id": 1,
-            "title": "Drou watch ultra",
-            "image": "https://example.com/images/tshirt1.jpg",
-            "hoverImage": "https://example.com/images/tshirt1_hover.jpg",
-            "price": 70.00,
-            "discountPrice": 80.00
-        },
-        {
-            "id": 2,
-            "title": "Droubook space gray",
-            "image": "https://example.com/images/jacket1.jpg",
-            "hoverImage": "https://example.com/images/jacket1_hover.jpg",
-            "price": 60.00,
-            "discountPrice": 45.00
-        },
-        {
-            "id": 3,
-            "title": "Homepod mini 2022",
-            "image": "https://example.com/images/boots1.jpg",
-            "hoverImage": "https://example.com/images/boots1_hover.jpg",
-            "price": 120.00,
-            "discountPrice": 95.00
-        },
-        {
-            "id": 4,
-            "title": "DroSafe Charger",
-            "image": "https://example.com/images/sneakers1.jpg",
-            "hoverImage": "https://example.com/images/sneakers1_hover.jpg",
-            "price": 70.00,
-            "discountPrice": 55.00
-        },
-        {
-            "id": 5,
-            "title": "UPad Pro black color",
-            "image": "https://example.com/images/scarf1.jpg",
-            "hoverImage": "https://example.com/images/scarf1_hover.jpg",
-            "price": 30.00,
-            "discountPrice": 24.99
-        },
-        {
-            "id": 6,
-            "title": "Home entertainment",
-            "image": "https://example.com/images/jeans1.jpg",
-            "hoverImage": "https://example.com/images/jeans1_hover.jpg",
-            "price": 55.00,
-            "discountPrice": 42.50
-        },
-        {
-            "id": 7,
-            "title": "DrouPods Pro white",
-            "image": "https://example.com/images/wallet1.jpg",
-            "hoverImage": "https://example.com/images/wallet1_hover.jpg",
-            "price": 40.00,
-            "discountPrice": 32.00
-        },
-        {
-            "id": 8,
-            "title": "Uphone lightning cable",
-            "image": "https://example.com/images/watch1.jpg",
-            "hoverImage": "https://example.com/images/watch1_hover.jpg",
-            "price": 150.00,
-            "discountPrice": 129.99
-        }
-    ]
+  "product": [
+    {
+      "id": 1,
+      "title": "Drou watch ultra",
+      "image": "https://drou-electronics-store.myshopify.com/cdn/shop/products/13_220x240_crop_center.jpg?v=1674275345",
+      "hoverImage": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p4_220x240_crop_center.jpg?v=1674275315",
+      "price": 70.0,
+      "discountPrice": 80.0
+    },
+    {
+      "id": 2,
+      "title": "Droubook space gray",
+      "image": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p2_ea1ad2a2-ba0d-4dd2-b29a-e51fd931583b_220x240_crop_center.jpg?v=1674275324",
+      "hoverImage": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p5_61c8ce6b-3afa-4276-a285-f98e4d5c7f67_220x240_crop_center.jpg?v=1674275311",
+      "price": 60.0,
+      "discountPrice": 45.0
+    },
+    {
+      "id": 3,
+      "title": "Homepod mini 2022",
+      "image": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p9_220x240_crop_center.jpg?v=1674275297",
+      "hoverImage": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p10_220x240_crop_center.jpg?v=1674275306",
+      "price": 120.0,
+      "discountPrice": 95.0
+    },
+    {
+      "id": 4,
+      "title": "DroSafe Charger",
+      "image": "https://drou-electronics-store.myshopify.com/cdn/shop/products/11_c6c97b67-edac-48bd-8e5c-cf0de5e9e3cb_220x240_crop_center.jpg?v=1674275302",
+      "hoverImage": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p7_6fe3391a-c2d0-4342-bd4c-70b486ce88ae_large.jpg?v=1674275297",
+      "price": 70.0,
+      "discountPrice": 55.0
+    },
+    {
+      "id": 5,
+      "title": "UPad Pro black color",
+      "image": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p3_0dd10fdb-44b3-415b-b7c3-91896ecb3ee2_large.jpg?v=1674275302",
+      "hoverImage": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p3_0dd10fdb-44b3-415b-b7c3-91896ecb3ee2_large.jpg?v=1674275302",
+      "price": 30.0,
+      "discountPrice": 24.99
+    },
+    {
+      "id": 6,
+      "title": "Home entertainment",
+      "image": "https://drou-electronics-store.myshopify.com/cdn/shop/products/11_c6c97b67-edac-48bd-8e5c-cf0de5e9e3cb_220x240_crop_center.jpg?v=1674275302",
+      "hoverImage": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p1_large.jpg?v=1674275319",
+      "price": 55.0,
+      "discountPrice": 42.5
+    },
+    {
+      "id": 7,
+      "title": "DrouPods Pro white",
+      "image": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p2_ea1ad2a2-ba0d-4dd2-b29a-e51fd931583b_220x240_crop_center.jpg?v=1674275324",
+      "hoverImage": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p10_large.jpg?v=1674275306",
+      "price": 40.0,
+      "discountPrice": 32.0
+    },
+    {
+      "id": 8,
+      "title": "Uphone lightning cable",
+      "image": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p7_6fe3391a-c2d0-4342-bd4c-70b486ce88ae_large.jpg?v=1674275297",
+      "hoverImage": "https://drou-electronics-store.myshopify.com/cdn/shop/products/p5_61c8ce6b-3afa-4276-a285-f98e4d5c7f67_large.jpg?v=1674275311",
+      "price": 150.0,
+      "discountPrice": 129.99
+    }
+  ]
 }
