@@ -1,17 +1,26 @@
 import {
+  AlignJustify,
   ChevronDown,
   Heart,
   ListIcon,
   Search,
   ShoppingBag,
   User2,
-} from "lucide-react";
-import React from "react";
+  X,
 
+} from "lucide-react";
+import React, { useEffect, useState } from "react";
+import styles from "./style.module.scss"
+import { clsx } from "clsx";
 const Header = () => {
+  const [OpenModal, SetOpenModal] = useState([])
+  useEffect(() => {
+    SetOpenModal(false)
+  }, [])
+
   return (
     <div>
-      <div className="bg-[#f3f3f3] py-[20px] ">
+      <div className={clsx(styles.header, "bg-[#f3f3f3] py-[20px]")}>
         <div className="container mx-auto max-w-[1300px] px-[15px]">
           <div className="flex items-center justify-between ">
             <div className="left">
@@ -50,7 +59,7 @@ const Header = () => {
                 alt=""
               />
             </div>
-            <div className="search">
+            <div className={clsx(styles.search)}>
               <div className="flex items-center border border-gray-200 rounded-[5px] text-[15px] min-h-[52px] w-[560px] justify-between px-[20px]">
                 <input
                   type="search"
@@ -74,12 +83,17 @@ const Header = () => {
                 <li className="hover:text-[#e52e06] duration-200 cursor-pointer">
                   <User2 size={35} strokeWidth={1} />
                 </li>
+                <li className="hover:text-[#e52e06] duration-200 cursor-pointer">
+                  <div onClick={() => SetOpenModal(true)} className={clsx(styles.burgerIcon)}>
+                    <AlignJustify size={35} strokeWidth={1} />
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="pagination  border-b border-gray-200 py-[10px]">
+      <div className={clsx(styles.pagination, "  border-b border-gray-200 py-[10px] w-full")}>
         <div className="container mx-auto max-w-[1300px] px-[15px]">
           <div className="flex items-center justify-between">
             <div className="left">
@@ -116,6 +130,18 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {
+        OpenModal && (
+          <div className="fixed w-ful inset-0 h-full z-[9999] bg-[#00000063]">
+            <div className="absolute left-0 bg-[#444] h-full w-[400px]">
+              <div className="bg-[#1f1f1f] absolute -right-4">
+                <X  color="white" />
+              </div>
+            </div>
+          </div>
+
+        )
+      }
     </div>
   );
 };

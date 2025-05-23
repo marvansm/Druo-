@@ -1,0 +1,26 @@
+.burgerIcon {
+    display: none;
+}
+.search {
+    display: block;
+}
+.pagination {
+    display: block;
+}
+.header {
+    display: block;
+}
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+    .burgerIcon {
+        display: block;
+    }
+    .search {
+        display: none;
+    }
+    .pagination {
+        display: none;
+    }
+    .header {
+        display: none;
+    }
+}
