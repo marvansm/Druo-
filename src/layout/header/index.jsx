@@ -3,6 +3,7 @@ import {
   ChevronDown,
   Heart,
   ListIcon,
+  Plus,
   Search,
   ShoppingBag,
   User2,
@@ -133,9 +134,27 @@ const Header = () => {
       {
         OpenModal && (
           <div className="fixed w-ful inset-0 h-full z-[9999] bg-[#00000063]">
-            <div className="absolute left-0 bg-[#444] h-full w-[400px]">
-              <div className="bg-[#1f1f1f] absolute -right-4">
-                <X  color="white" />
+            <div className="absolute left-0 bg-[#444] h-full w-[400px] p-5">
+              <p className="text-[15px] font-normal leading-[1.74] text-[#fff] mb-5"> We are open with limited hours and staff.</p>
+              <div className="flex items-center border border-gray-200 rounded-full text-[15px] min-h-[52px] w-full justify-between px-[20px] bg-[#fff] ">
+                <input
+                  type="search"
+                  placeholder="Search our store"
+                  className="outline-none "
+                />
+                <Search color="#e52e06" />
+              </div>
+              <div>
+                <ul>
+                  <li className="flex items-center">Home <Plus /></li>
+                  <li className="flex items-center">Electronics <Plus /></li>
+                  <li className="flex items-center">Blog <Plus /></li>
+                  <li className="flex items-center">Pages <Plus /></li>
+                  <li>Contact </li>
+                </ul>
+              </div>
+              <div onClick={() => SetOpenModal(false)} className="bg-[#1f1f1f] absolute top-0 -right-10 w-[40px] h-[40px] flex items-center justify-center">
+                <X color="white" />
               </div>
             </div>
           </div>
