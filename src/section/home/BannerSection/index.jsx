@@ -90,13 +90,13 @@ const BannerSection = () => {
             alt="Small 1"
             class="w-full h-full object-cover "
           />
-          <div className="absolute  top-[90px] left-[20px] flex items-start flex-col">
-            <ul className="text-[#fff] flex items-center gap-2 mb-[5px]">
-              <li className="text-[15px] font-normal leading-[1.74] ">
+          <div className="absolute  top-[60px] left-[20px] flex items-start flex-col">
+            <ul className="text-[#fff] flex items-center gap-2 mb-[1px]">
+              <li className="text-[15px] font-normal leading-[1.74] uppercase ">
                 Modern Mobile
               </li>
             </ul>
-            <h2 className="text-[#fff] text-[24px] leading-[48px] font-normal mb-[5px] text-left">
+            <h2 className="text-[#fff] text-[24px] leading-[48px] font-normal mb-[1px] text-left">
               New Collection
             </h2>
             <h3 className="text-[#e4573d] text-[24px] font-bold">$99.00</h3>
@@ -106,13 +106,13 @@ const BannerSection = () => {
             alt="Small 2"
             class="w-full h-full object-cover "
           />
-          <div className="absolute bottom-[40px] left-[20px] flex items-start flex-col">
-            <ul className="text-[#fff] flex items-center gap-2 mb-[5px]">
-              <li className="text-[15px] font-normal leading-[1.74] ">
+          <div className="absolute bottom-[80px] left-[20px] flex items-start flex-col">
+            <ul className="text-[#fff] flex items-center gap-2 mb-[1px]">
+              <li className="text-[15px] font-normal leading-[1.74] uppercase ">
                 Modern Mobile
               </li>
             </ul>
-            <h2 className="text-[#fff] text-[24px] leading-[48px] font-normal mb-[5px] text-left">
+            <h2 className="text-[#fff] text-[24px] leading-[48px] font-normal mb-[1px] text-left">
               New Collection
             </h2>
             <h3 className="text-[#e4573d] text-[24px] font-bold">$99.00</h3>
