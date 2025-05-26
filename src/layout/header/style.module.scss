@@ -1,26 +1,31 @@
 .burgerIcon {
-    display: none;
+  display: none;
 }
 .search {
-    display: block;
+  display: block;
 }
 .pagination {
-    display: block;
+  display: block;
 }
 .header {
-    display: block;
+  display: block;
 }
 @media screen and (min-width: 300px) and (max-width: 1024px) {
-    .burgerIcon {
-        display: block;
-    }
-    .search {
-        display: none;
-    }
-    .pagination {
-        display: none;
-    }
-    .header {
-        display: none;
-    }
+  .burgerIcon {
+    display: block;
+  }
+  .search {
+    display: none;
+  }
+  .pagination {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+}
+
+.basket {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
 }

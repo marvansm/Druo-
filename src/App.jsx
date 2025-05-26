@@ -1,13 +1,14 @@
-import React from "react";
-import Layout from "./layout";
-import HomePage from "./pages/home";
+import { RouterProvider } from "react-router-dom";
+import { Routers } from "./router";
+import { CardProvider } from "./Providers/AddToCard";
+import { Toaster } from "sonner";
 const App = () => {
   return (
     <div>
-        <Layout>
-          <HomePage />
-        </Layout>
-
+      <CardProvider>
+        <Toaster position="top-center" />
+        <RouterProvider router={Routers} />
+      </CardProvider>
     </div>
   );
 };
