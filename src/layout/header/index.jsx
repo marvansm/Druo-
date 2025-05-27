@@ -19,14 +19,28 @@ import styles from "./style.module.scss";
 import { clsx } from "clsx";
 import { useNavigate } from "react-router-dom";
 import { SelectContext } from "../../Providers/AddToCard";
+import { UserButton, useUser } from "@clerk/clerk-react";
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
   const [OpenModal, SetOpenModal] = useState([]);
   const Navigate = useNavigate();
   useEffect(() => {
     SetOpenModal(false);
   }, []);
+  const { t, i18n } = useTranslation();
+  useEffect(() => {
+    console.log("Switched language", i18n.language);
+  }, [i18n.language]);
 
-  const { Card, TotalPrice,   RemoveProduct } = SelectContext();
+  const locales = {
+    en: { title: "En" },
+    az: { title: "Az" },
+    ru: { title: "Ru" },
+  };
+
+  const { Card, TotalPrice, RemoveProduct } = SelectContext();
+  const { isSignedIn, isLoaded } = useUser();
 
   return (
     <div>
@@ -48,12 +62,30 @@ const Header = () => {
             <div className="right">
               <ul className="flex items-center text-[#444] font-medium gap-3 text-[13px]">
                 <li className="flex items-center gap-1 text-[13px] font-bold">
-                  USD <ChevronDown size={17} />
+                  <select
+                    onChange={(e) => {
+                      i18n.changeLanguage(e.target.value);
+                    }}
+                    id="language"
+                    name="language"
+                    value={i18n.language}
+                  >
+                    <option value="az">{locales.az.title}</option>
+                    <option value="ru">{locales.ru.title}</option>
+                    <option value="en">{locales.en.title}</option>
+                  </select>
                 </li>
                 <li>
                   <div className="border border-black/20 h-[20px]"></div>
                 </li>
-                <li>Login / Sign Up</li>
+                <li
+                  className="cursor-pointer"
+                  onClick={() => {
+                    Navigate("/register");
+                  }}
+                >
+                  Login / Sign Up
+                </li>
               </ul>
             </div>
           </div>
@@ -130,9 +162,11 @@ const Header = () => {
                               </h3>
                             </div>
                             <div
-                            onClick={()=>{
-                              RemoveProduct(item.id)
-                            }} className="">
+                              onClick={() => {
+                                RemoveProduct(item.id);
+                              }}
+                              className=""
+                            >
                               <X size={20} color="black" />
                             </div>
                           </div>
@@ -162,9 +196,22 @@ const Header = () => {
                     </div>
                   </div>
                 </li>
-                <li className="hover:text-[#e52e06] duration-200 cursor-pointer">
-                  <User2 size={35} strokeWidth={1} />
-                </li>
+                {isSignedIn && isLoaded ? (
+                  <li className="hover:text-[#e52e06] duration-200 cursor-pointer ">
+                    <div className="flex items-center justify-center">
+                      <UserButton />
+                    </div>
+                  </li>
+                ) : (
+                  <li
+                    onClick={() => {
+                      Navigate("/register");
+                    }}
+                    className="hover:text-[#e52e06] duration-200 cursor-pointer "
+                  >
+                    <User2 size={35} strokeWidth={1} />
+                  </li>
+                )}
                 <li className="hover:text-[#e52e06] duration-200 cursor-pointer">
                   <div
                     onClick={() => SetOpenModal(true)}
@@ -198,25 +245,25 @@ const Header = () => {
                   onClick={() => Navigate("/")}
                   className="flex items-center hover:text-[#e52e06] duration-200 cursor-pointer"
                 >
-                  Home <ChevronDown size={15} />
+                  {t("navbar.home")} <ChevronDown size={15} />
                 </li>
                 <li className="flex items-center hover:text-[#e52e06] duration-200 cursor-pointer">
-                  Electronics <ChevronDown size={15} />
+                  {t("navbar.electronics")} <ChevronDown size={15} />
                 </li>
                 <li className="flex items-center hover:text-[#e52e06] duration-200 cursor-pointer">
-                  Blog <ChevronDown size={15} />
+                  {t("navbar.Blog")} <ChevronDown size={15} />
                 </li>
                 <li className="flex items-center hover:text-[#e52e06] duration-200 cursor-pointer">
-                  Pages <ChevronDown size={15} />
+                  {t("navbar.Pages")} <ChevronDown size={15} />
                 </li>
                 <li className="hover:text-[#e52e06] duration-200 cursor-pointer">
-                  Contact
+                  {t("navbar.contact")}
                 </li>
               </ul>
             </div>
             <div className="right">
               <ul className="flex items-center gap-2.5 text-[#333]">
-                <li className="text-[14px] font-normal">Hotline</li>
+                <li className="text-[14px] font-normal">{t("navbar.hotline")}</li>
                 <li className="text-[18px] font-bold">1800 - 1102</li>
               </ul>
             </div>

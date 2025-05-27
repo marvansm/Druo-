@@ -17,7 +17,7 @@ const BannerSection = () => {
             navigation={true}
             modules={[Pagination, Navigation]}
             loop={true}
-            className="mySwiper"
+            className="mySwiper h-full"
           >
             <SwiperSlide>
               <div className="relative h-full">
